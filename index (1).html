@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free Fire MAX Community Tournament</title>
+<meta name="description" content="Free Fire MAX community tournaments: register your squad, see the schedule, room codes and live standings.">
+<style>
+:root{--bg:#0a0a0a;--card:#141414;--tx:#f5f5f5;--mu:#9ca3af;--ac:#e11d2e;--gd:#f5b82e;--bd:#2a2a2a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0a0a;--card:#141414;--tx:#f5f5f5;--mu:#9ca3af;--ac:#e11d2e;--gd:#f5b82e;--bd:#2a2a2a}}
+:root[data-theme="dark"]{--bg:#0a0a0a;--card:#141414;--tx:#f5f5f5;--mu:#9ca3af;--ac:#e11d2e;--gd:#f5b82e;--bd:#2a2a2a}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(ellipse at 50% -10%,rgba(225,29,46,.38),transparent 55%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23e11d2e' stroke-opacity='.14' stroke-width='1.5'%3E%3Ccircle cx='60' cy='60' r='18'/%3E%3Cpath d='M60 30v16M60 74v16M30 60h16M74 60h16'/%3E%3C/g%3E%3C/svg%3E"),repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 2px,transparent 2px 16px),var(--bg);background-attachment:fixed;color:var(--tx);font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px}
+h1{font-size:23px;margin:0;letter-spacing:1px;text-transform:uppercase;font-weight:800}.hero{position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;padding:28px 18px;margin-bottom:10px;border-radius:14px;border:1px solid #5a0b13;border-left:4px solid var(--ac);background:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 10px,transparent 10px 20px),linear-gradient(135deg,#8a0f1b 0%,#1c0508 60%,#0a0a0a 100%)}.hero h1,.hero svg{position:relative;z-index:1}.hero::after{content:"";position:absolute;right:-30px;top:-30px;width:180px;height:180px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.3' stroke-width='3'%3E%3Ccircle cx='90' cy='90' r='54'/%3E%3Ccircle cx='90' cy='90' r='8'/%3E%3Cpath d='M90 10v42M90 128v42M10 90h42M128 90h42'/%3E%3C/g%3E%3C/svg%3E") no-repeat}.note{border-left:4px solid var(--ac)}.hero svg{flex:none}h2{font-size:17px;margin:0 0 10px}
+.sub{color:var(--mu);font-size:13px;margin:2px 0 14px}
+nav{display:flex;gap:6px;margin-bottom:14px}
+nav button{flex:1;padding:10px 4px;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;font-size:14px}
+nav button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:12px;border-top:2px solid var(--ac);box-shadow:0 4px 14px rgba(0,0,0,.5)}
+input,select{width:100%;padding:10px;margin:0 0 8px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font-size:16px}
+.go{width:100%;padding:12px;border:0;border-radius:10px;background:var(--ac);color:#fff;font-size:16px;font-weight:600;box-shadow:0 2px 10px rgba(225,29,46,.4)}
+.wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:8px 6px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}th{color:var(--mu);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+.n{text-align:right}.r1{color:var(--gd);font-weight:700}
+input:focus,textarea:focus{outline:2px solid var(--ac);outline-offset:0}nav button.on{box-shadow:0 2px 10px rgba(225,29,46,.4)}.row{display:grid;grid-template-columns:1fr 70px 70px;gap:6px;align-items:center}.row input{margin:0 0 6px}
+.pre{white-space:pre-wrap}.ok{color:#16a34a}.bad{color:#f59e0b}.sm{padding:6px 10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;font-size:13px}.mu{color:var(--mu);font-size:13px}.msg{font-size:13px;color:var(--ac);min-height:18px}
+</style></head><body><main>
+<div class="hero"><svg width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#e11d2e" stroke-width="2.5" stroke-linecap="round"><circle cx="23" cy="23" r="13"/><circle cx="23" cy="23" r="2" fill="#e11d2e"/><path d="M23 2v10M23 34v10M2 23h10M34 23h10"/></svg><h1>Free Fire MAX <span style="color:var(--ac)">Tournament</span></h1></div>
+<div class="sub">Community tournaments · standings · schedule</div>
+<nav id="nav"></nav><div id="auth" style="margin-bottom:12px"></div><div id="v"></div>
+<p class="mu">Unofficial community tool, not affiliated with Garena.</p>
+</main>
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,signOut,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {getFirestore,doc,collection,setDoc,onSnapshot} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+// ====== EDIT THESE TWO ======
+const FIREBASE_CONFIG={apiKey:"AIzaSyDaHZ3As2Cc14X4WLr10YBnSegpvE17zhM",authDomain:"free-tournaments-d891e.firebaseapp.com",projectId:"free-tournaments-d891e",appId:"1:401283262624:web:38af3995bdf4c53b7d81c5"};
+const ADMIN_EMAIL="devilboyz8277@gmail.com";
+// ============================
+const app=initializeApp(FIREBASE_CONFIG),auth=getAuth(app),db=getFirestore(app);
+let tab="board",user=null,teams=[],results=[],rooms=[],pays={},msg="",subs=[];
+let cfg={fee:0,upi:"",discord:"",stream:"",sched:"",prize:"",sponsors:"",pts:"12,9,8,7,6,5,4,3,2,1",kp:1};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);
+const isAdmin=()=>!!user&&user.email===ADMIN_EMAIL;
+const nums=t=>String(t).split(",").map(x=>+x.trim()||0);
+const paid=id=>!!pays[id]?.paid, feeOn=()=>+cfg.fee>0;
+const link=(u,l)=>/^https:\/\/[^\s"<>]+$/.test((u||"").trim())?`<a href="${esc(u.trim())}" target="_blank" rel="noopener">${esc(l)}</a>`:"";
+const listen=(ref,fn)=>subs.push(onSnapshot(ref,s=>{fn(s);draw()},()=>{}));
+const save=async(c,id,d,ok)=>{try{await setDoc(doc(db,c,id),d);msg=ok}catch(e){msg="Could not save: "+(e.code||e.message)}draw()};
+const TABS=[["board","Standings"],["info","Info"],["reg","Join"],...(isAdmin()?[["admin","Admin"]]:[])];
+function nav(){const T=[["board","Standings"],["info","Info"],["reg","Join"],...(isAdmin()?[["admin","Admin"]]:[])];
+ $("nav").innerHTML=T.map(([k,l])=>`<button class="${tab===k?"on":""}" data-t="${k}">${l}</button>`).join("");
+ $("nav").querySelectorAll("button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;msg="";draw()})}
+function standings(){const P=nums(cfg.pts),m={};
+ results.forEach(r=>Object.entries(r.rows||{}).forEach(([id,x])=>{const s=m[id]??=({name:x.name,pp:0,kp:0,w:0});s.name=x.name;s.pp+=P[x.p-1]||0;s.kp+=(+x.k||0)*(+cfg.kp||0);if(x.p===1)s.w++}));
+ return Object.values(m).map(s=>({...s,t:s.pp+s.kp})).sort((a,b)=>b.t-a.t||b.kp-a.kp||b.w-a.w)}
+function draw(){nav();
+ $("auth").innerHTML=user?`<span class="mu">Signed in as ${esc(user.email)}</span> <button class="sm" id="so">Sign out</button>`:`<button class="sm" id="si">Sign in with Google</button>`;
+ $("auth").innerHTML+=`<div class="msg">${esc(msg)}</div>`;
+ if($("si"))$("si").onclick=()=>{msg="Signing in…";draw();const p=new GoogleAuthProvider();signInWithPopup(auth,p).then(()=>{msg=""}).catch(e=>{if(e.code==="auth/popup-blocked"||e.code==="auth/operation-not-supported-in-this-environment"){signInWithRedirect(auth,p)}else{msg="Sign-in failed: "+(e.code||e.message);draw()}})};
+ if($("so"))$("so").onclick=()=>signOut(auth);
+ const v=$("v"),S=standings(),me=teams.find(t=>t.id===user?.uid);
+ if(tab==="board"){
+  const win=results.map(r=>{const w=Object.values(r.rows||{}).find(x=>x.p===1);return w?`<div>Match ${esc(r.n)}: <b>${esc(w.name)}</b></div>`:""}).join("");
+  v.innerHTML=`<div class="card"><h2>Standings</h2><div class="mu" style="margin-bottom:8px">${results.length} match(es) played.</div>`+
+  (S.length?`<div class="wrap"><table><tr><th>#</th><th>Team</th><th class="n">Wins</th><th class="n">Kills</th><th class="n">Pos</th><th class="n">Total</th></tr>`+
+  S.map((x,i)=>`<tr><td class="${i?"":"r1"}">${i+1}</td><td>${esc(x.name)}</td><td class="n">${x.w}</td><td class="n">${x.kp}</td><td class="n">${x.pp}</td><td class="n"><b>${x.t}</b></td></tr>`).join("")+`</table></div>`:'<div class="mu">No results yet.</div>')+`</div>`+
+  (win?`<div class="card"><h2>Hall of Fame</h2>${win}</div>`:"")}
+ else if(tab==="info"){
+  const sp=(cfg.sponsors||"").split("\n").map(l=>l.split("|").map(x=>x.trim())).filter(a=>a[0]).map(a=>`<div>${a[1]&&link(a[1],a[0])||esc(a[0])}</div>`).join("");
+  v.innerHTML=`<div class="card"><h2>Prize</h2><div class="pre">${esc(cfg.prize)||'<span class="mu">Bragging rights and a spot in the Hall of Fame.</span>'}</div></div>
+  <div class="card"><h2>Schedule</h2><div class="pre">${esc(cfg.sched)||'<span class="mu">Not posted yet.</span>'}</div></div>
+  <div class="card"><h2>Rooms</h2>`+(user?(rooms.map(r=>`<div style="padding:5px 0;border-bottom:1px solid var(--bd)"><b>Match ${esc(r.n)}</b> · ID ${esc(r.id)} · Pass ${esc(r.pw)}</div>`).join("")||'<div class="mu">No room codes for you yet. Register and, if there is a fee, wait for payment confirmation.</div>'):'<div class="mu">Sign in to see room codes.</div>')+`</div>
+  <div class="card"><h2>Community</h2>${[link(cfg.discord,"Join our Discord"),link(cfg.stream,"Watch the stream")].filter(Boolean).join("<br>")||'<span class="mu">Links coming soon.</span>'}</div>
+  <div class="card"><h2>Sponsors</h2>${sp||'<div class="mu">Want to sponsor? Contact the organizer on Discord.</div>'}</div>`}
+ else if(tab==="reg"){
+  if(!user){v.innerHTML='<div class="card"><h2>Join</h2><div class="mu">Sign in with Google to register your squad.</div></div>';return}
+  const f=me||{};
+  v.innerHTML=`<div class="card"><h2>${me?"Update your squad":"Register your squad"}</h2>
+  <input id="tn" placeholder="Team name" maxlength="30" value="${esc(f.name)}"><input id="cap" placeholder="Captain in-game name" maxlength="30" value="${esc(f.cap)}">
+  <input id="cid" placeholder="Captain UID" maxlength="15" inputmode="numeric" value="${esc(f.cid)}"><input id="pl" placeholder="Other 3 players (comma separated)" maxlength="90" value="${esc(f.pl)}">
+  ${feeOn()?`<div style="margin:6px 0"><b>Participation fee ₹${esc(cfg.fee)}</b> <span class="mu">(refunded if the match is cancelled)</span><div class="pre mu">${esc(cfg.upi)}</div></div><input id="ref" placeholder="Payment reference / transaction ID" maxlength="40" value="${esc(f.ref)}">`:'<div class="mu" style="margin:6px 0">Entry is free.</div>'}
+  <button class="go" id="sv">${me?"Save changes":"Register"}</button><div class="msg">${esc(msg)}</div>
+  ${me&&feeOn()?`<div>Status: ${paid(user.uid)?'<b class="ok">Payment confirmed</b>':'<b class="bad">Awaiting confirmation</b>'}</div>`:""}</div>`;
+  $("sv").onclick=()=>{const name=$("tn").value.trim();if(!name){msg="Team name needed.";return draw()}
+   save("teams",user.uid,{name,cap:$("cap").value.trim(),cid:$("cid").value.trim(),pl:$("pl").value.trim(),ref:$("ref")?$("ref").value.trim():""},"Saved ✓")}}
+ else{
+  if(!isAdmin()){v.innerHTML='<div class="card">Organizers only.</div>';return}
+  const F=(id,l,val,t)=>`<label class="mu">${l}</label><input id="${id}" ${t||""} value="${esc(val)}">`;
+  const TA=(id,l,val)=>`<label class="mu">${l}</label><textarea id="${id}" rows="3" style="width:100%;padding:10px;margin-bottom:8px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit">${esc(val)}</textarea>`;
+  v.innerHTML=`<div class="card"><h2>Settings</h2>${F("c_fee","Participation fee ₹ (0 = free)",cfg.fee,'type="number" min="0"')}${F("c_upi","How to pay (UPI ID)",cfg.upi)}${F("c_dc","Discord link (https://…)",cfg.discord)}${F("c_st","Stream link (https://…)",cfg.stream)}
+  ${TA("c_pz","Prize text (e.g. sponsor-funded prize)",cfg.prize)}${TA("c_sp","Sponsors, one per line: Name | https://link",cfg.sponsors)}${TA("c_sc","Schedule",cfg.sched)}${F("c_pts","Placement points",cfg.pts)}${F("c_kp","Points per kill",cfg.kp,'type="number" min="0"')}<button class="go" id="sc">Save settings</button></div>
+  <div class="card"><h2>Squads (${teams.length})</h2>`+teams.map(t=>`<div style="padding:6px 0;border-bottom:1px solid var(--bd)"><b>${esc(t.name)}</b> <span class="mu">${esc(t.cap)} · UID ${esc(t.cid)}${feeOn()?" · ref "+esc(t.ref):""}</span>${feeOn()?` <button class="sm" data-p="${t.id}">${paid(t.id)?"Mark unpaid":"Confirm paid"}</button>`:""}</div>`).join("")+`</div>
+  <div class="card"><h2>Room for a match</h2><input id="rn" type="number" min="1" value="${rooms.length+1}"><input id="rid" placeholder="Room ID"><input id="rpw" placeholder="Password"><button class="go" id="sr2">Save room</button></div>
+  <div class="card"><h2>Enter match results</h2><input id="mn" type="number" min="1" value="${results.length+1}"><div class="row mu"><span>Team</span><span>Place</span><span>Kills</span></div>`+
+  teams.map(t=>`<div class="row" data-id="${t.id}" data-n="${esc(t.name)}"><span>${esc(t.name)}</span><input type="number" min="1" class="p"><input type="number" min="0" class="k"></div>`).join("")+`<button class="go" id="sr">Save match</button></div><div class="msg">${esc(msg)}</div>`;
+  const g=id=>$(id).value;
+  $("sc").onclick=()=>save("config","main",{fee:+g("c_fee")||0,upi:g("c_upi"),discord:g("c_dc"),stream:g("c_st"),prize:g("c_pz"),sponsors:g("c_sp"),sched:g("c_sc"),pts:g("c_pts"),kp:+g("c_kp")||0},"Settings saved ✓");
+  v.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>save("payments",b.dataset.p,{paid:!paid(b.dataset.p)},"Updated ✓"));
+  $("sr2").onclick=()=>save("rooms","m"+g("rn"),{n:+g("rn"),id:g("rid"),pw:g("rpw")},"Room saved ✓");
+  $("sr").onclick=()=>{const rows={};v.querySelectorAll(".row[data-id]").forEach(r=>{const p=+r.querySelector(".p").value;if(p)rows[r.dataset.id]={name:r.dataset.n,p,k:+r.querySelector(".k").value||0}});save("results","m"+g("mn"),{n:+g("mn"),rows},"Match saved ✓")}}}
+listen(doc(db,"config","main"),s=>{if(s.exists())cfg={...cfg,...s.data()}});
+listen(collection(db,"results"),s=>results=s.docs.map(d=>d.data()).sort((a,b)=>a.n-b.n));
+onAuthStateChanged(auth,u=>{subs.slice(2).forEach(f=>f());subs=subs.slice(0,2);user=u;teams=[];rooms=[];pays={};
+ if(u){const rm=s=>rooms=s.docs.map(d=>d.data()).sort((a,b)=>a.n-b.n);listen(collection(db,"rooms"),rm);
+  if(isAdmin()){listen(collection(db,"teams"),s=>teams=s.docs.map(d=>({id:d.id,...d.data()})));listen(collection(db,"payments"),s=>{pays={};s.docs.forEach(d=>pays[d.id]=d.data())})}
+  else{listen(doc(db,"teams",u.uid),s=>teams=s.exists()?[{id:u.uid,...s.data()}]:[]);listen(doc(db,"payments",u.uid),s=>{pays={};if(s.exists())pays[u.uid]=s.data()})}}
+ draw()});
+draw();
+</script></body></html>
